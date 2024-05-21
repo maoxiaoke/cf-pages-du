@@ -1,0 +1,32 @@
+{
+  "name": "@nzha/cf-pages-du",
+  "version": "1.0.2",
+  "access": "public",
+  "license": "MIT",
+  "description": "Directly create new Pages deploys using the Cloudflare API",
+  "keywords": [
+    "cloudflare",
+    "cloudflare pages",
+    "cloudflare workers"
+  ],
+  "sideEffects": false,
+  "author": "maoxiaoke",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild index.ts --format=cjs --platform=node --outdir=. --log-level=warning --bundle --external:blake3-wasm",
+    "types": "tsc",
+    "prepublishOnly": "npm run build && npm run types"
+  },
+  "dependencies": {
+    "@adamburgess/linq": "^3.0.0",
+    "blake3-wasm": "^2.1.5",
+    "mime": "^3.0.0",
+    "mri": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/mime": "^3.0.1",
+    "@types/node": "^18.15.5",
+    "esbuild": "^0.17.12",
+    "typescript": "^5.0.2"
+  }
+}
