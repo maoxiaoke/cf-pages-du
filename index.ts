@@ -283,6 +283,7 @@ export class CloudflarePagesDirectUploader {
         ...(options?.ignorePatterns ?? []),
       ],
       onlyFiles: true,
+      absolute: true,
     });
 
     for (const file of globFiles) {
