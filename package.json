@@ -1,6 +1,6 @@
 {
   "name": "@nzha/cf-pages-du",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "access": "public",
   "license": "MIT",
   "description": "Directly create new Pages deploys using the Cloudflare API",
