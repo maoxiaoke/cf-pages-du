@@ -1,6 +1,6 @@
 {
   "name": "@nzha/cf-pages-du",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "access": "public",
   "license": "MIT",
   "description": "Directly create new Pages deploys using the Cloudflare API",
@@ -20,6 +20,7 @@
   "dependencies": {
     "@adamburgess/linq": "^3.0.0",
     "blake3-wasm": "^2.1.5",
+    "globby": "^11.1.0",
     "mime": "^3.0.0",
     "mri": "^1.2.0"
   },
